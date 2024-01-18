@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Test db copy",
+    "slug": "testdbcopy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#ffffff",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "packagerOpts": {
+      "assetExts": ["db3"]
+    },
+    "ios": {
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.idkfa.testdbcopy"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
