@@ -37,3 +37,6 @@ There is Unsupported url 1002 exeception thrown
 
 ![image](https://github.com/Sznapsollo/expo_ios_bundle_unsupportedurl_1002/assets/20971560/bdcc842b-b8f4-43b4-8388-44a0559de996)
 
+Created expo issue for this here: https://github.com/expo/expo/issues/26502
+
+
