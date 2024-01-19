@@ -12,3 +12,14 @@ All example is contained in App.js
 
 
 db3 extension has been added to assetsExtx in metro.config.js
+
+same result was with a bit older versions of packages (these below are in my origin project). This repo was clean created so versions are slightly newer but still result is exactly same.
+```
+"expo": "~49.0.15",
+"expo-asset": "^8.10.1",
+"expo-file-system": "^15.6.0",
+"expo-font": "~11.4.0",
+"expo-sqlite": "^11.6.0",
+"expo-status-bar": "~1.6.0",
+
+```
