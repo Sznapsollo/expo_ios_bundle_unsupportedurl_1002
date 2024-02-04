@@ -16,12 +16,24 @@ export default function App() {
         if (!(await FileSystem.getInfoAsync(FileSystem.documentDirectory + 'SQLite')).exists) {
           console.log('Creating SQLite folder');
           await FileSystem.makeDirectoryAsync(FileSystem.documentDirectory + 'SQLite');
+        } else {
+          console.log('folder SQLite existed');    
         }
         console.log('Copying db');
         await FileSystem.downloadAsync(
           Asset.fromModule(require('./assets/test_database.db3')).uri,
           FileSystem.documentDirectory + 'SQLite/test_database.db3'
         );
+        console.log('db copied');
+
+        console.log('will check if file exists');
+        if ((await FileSystem.getInfoAsync(FileSystem.documentDirectory + 'SQLite/test_database.db3')).exists) {
+          console.log('db exists');
+        } else {
+          console.log('db does not exist');
+          return
+        }
+
         const database =  SQLite.openDatabase('test_database.db3');
 
         database.transaction((tx) => {

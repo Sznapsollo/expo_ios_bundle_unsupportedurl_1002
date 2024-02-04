@@ -1,26 +1,33 @@
 {
   "expo": {
-    "name": "Test db copy",
+    "name": "testdbcopy",
     "slug": "testdbcopy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "backgroundColor": "#ffffff",
-    "updates": {
-      "fallbackToCacheTimeout": 0
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "packagerOpts": {
-      "assetExts": ["db3"]
+      "assetExts": [
+        "db3"
+      ]
     },
     "ios": {
       "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 1,
-      "package": "com.idkfa.testdbcopy"
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
